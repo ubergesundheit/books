@@ -1,0 +1,780 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <title>Der serielle Datenbus (I²C) · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kommentare.html" />
+    
+    
+    <link rel="prev" href="software_libraries.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Einleitung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="eigene_projekte.html">
+            
+                <a href="eigene_projekte.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Eigene Projekte beitragen
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="kisteninhalt.html">
+            
+                <a href="kisteninhalt.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Inhalt der Kiste
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="genuino_board.html">
+            
+                <a href="genuino_board.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    Arduino/Genuino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="installation_der_software.html">
+            
+                <a href="installation_der_software.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Installation der Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="arduino_ide.html">
+            
+                <a href="arduino_ide.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Arduino IDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Grundlagen</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="digitale_signale.html">
+            
+                <a href="digitale_signale.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Digitale Signale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="analoge_signale.html">
+            
+                <a href="analoge_signale.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Analoge Signale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="variablen.html">
+            
+                <a href="variablen.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Variablen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="ifelse-bedingung.html">
+            
+                <a href="ifelse-bedingung.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    if/else-Bedingung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="der_serielle_monitor.html">
+            
+                <a href="der_serielle_monitor.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Der Serielle Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="software_libraries.html">
+            
+                <a href="software_libraries.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Verwendung von Software-Bibliotheken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.7" data-path="der_serielle_datenbus.html">
+            
+                <a href="der_serielle_datenbus.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Der serielle Datenbus (I²C)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="kommentare.html">
+            
+                <a href="kommentare.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    Kommentare im Quelltext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Projekte</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="diy-umweltstation.html">
+            
+                <a href="diy-umweltstation.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    DIY-Umweltstation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="experimente_mit_Licht.html">
+            
+                <a href="experimente_mit_Licht.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    Experimente mit Licht
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="uv_sensor.html">
+            
+                <a href="uv_sensor.html">
+            
+                    
+                        <b>4.1.2.</b>
+                    
+                    UV-Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="temp_und_luftfeuchte.html">
+            
+                <a href="temp_und_luftfeuchte.html">
+            
+                    
+                        <b>4.1.3.</b>
+                    
+                    Luftfeuchtigkeit und Thermometer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" >
+            
+                <span>
+            
+                    
+                        <b>4.1.4.</b>
+                    
+                    Luftdruck
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="datenlogger.html">
+            
+                <a href="datenlogger.html">
+            
+                    
+                        <b>4.1.5.</b>
+                    
+                    Speichern auf SD-Karte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="ethernet-bmp280.html">
+            
+                <a href="ethernet-bmp280.html">
+            
+                    
+                        <b>4.1.6.</b>
+                    
+                    Ethernetshield - auf ins Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="verkehrszaehler.html">
+            
+                <a href="verkehrszaehler.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Verkehrszähler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="ampelButton.html">
+            
+                <a href="ampelButton.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Ampelschaltung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="summer.html">
+            
+                <a href="summer.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Auf die Töne fertig los!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="mikrofon.html">
+            
+                <a href="mikrofon.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    Lauschangriff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="webserver.html">
+            
+                <a href="webserver.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Kleiner Webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" >
+            
+                <span>
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Mehrfarbige LED
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="randomBlink.html">
+            
+                <a href="randomBlink.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    Kaminfeuer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="community_projekte.html">
+            
+                <a href="community_projekte.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    Community-Projekte
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Anhang</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="GLOSSARY.html">
+            
+                <a href="GLOSSARY.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Glossar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="downloads.html">
+            
+                <a href="downloads.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Downloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Veröffentlicht mit GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Der serielle Datenbus (I²C)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="der-serielle-datenbus">Der serielle Datenbus</h1><p>Der <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> kann &#xFC;ber einen Datenbus mit anderen Ger&#xE4;ten kommunizieren.
+Ein Datenbus beschreibt ein System, &#xFC;ber das zwei oder mehr Ger&#xE4;te Daten auf eine geordnete Art und Weise austauschen k&#xF6;nnen.
+Bei unserem <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> w&#xE4;re das zweite Ger&#xE4;t fast immer ein Sensor, bzw ein Aktor.</p><h2 id="der-i&#xB2;c-bus">Der I&#xB2;C-Bus</h2><p>Der <a href="GLOSSARY.html#i&#xB2;c" class="glossary-term" title="I&#xB2;C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Ger&#xE4;ten auf einem Bus.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Ger&#xE4;te mit m&#xF6;glichst wenigen Kan&#xE4;len ansteuern zu k&#xF6;nnen.
+Ger&#xE4;te haben dabei eine bestimmte Adresse, &#xFC;ber die sie auf zwei Kan&#xE4;len SDA (serial data) und SDC (serial clock) angesteuert werden.
+Mehrere Ger&#xE4;te k&#xF6;nnen so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.">I&#xB2;C</a>-Bus ist ein einfach zu verwendender Datenbus um Daten zu &#xFC;bermitteln.
+Hierbei werden die Daten zwischen dem <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> und dem anderen Ger&#xE4;t durch zwei Kabel &#xFC;bertragen, die als <code>SDA</code> und <code>SCL</code> bezeichnet werden.
+Die als <code>SDA</code> (serial data) bezeichnete Leitung ist die Datenleitung, &#xFC;ber welche die eigentlichen Daten &#xFC;bermittelt werden.
+Die <code>SCL</code> (serial clock) Leitung wird auch Taktleitung genannt und gibt die Taktfrequenz vor.
+Am <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> findest du die beiden Anschl&#xFC;sse als <code>A4</code> (SDA) und <code>A5</code> (SDC).</p><p>Wenn mehrere <a href="GLOSSARY.html#i&#xB2;c" class="glossary-term" title="I&#xB2;C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Ger&#xE4;ten auf einem Bus.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Ger&#xE4;te mit m&#xF6;glichst wenigen Kan&#xE4;len ansteuern zu k&#xF6;nnen.
+Ger&#xE4;te haben dabei eine bestimmte Adresse, &#xFC;ber die sie auf zwei Kan&#xE4;len SDA (serial data) und SDC (serial clock) angesteuert werden.
+Mehrere Ger&#xE4;te k&#xF6;nnen so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.">I&#xB2;C</a> Ger&#xE4;te an den <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> angeschlossen werden sollen, wird dies &#xFC;ber eine Reihenschaltung umgesetzt.
+Das SDA Kabel am ersten Sensor w&#xFC;rde also auf der selben Reihe des Breadboards zum n&#xE4;chsten Sensor verl&#xE4;ngert:</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/i2c_serienschaltung.png" alt="i2c serienschaltung" align="center" width="400px"></p><p>Benutzt man den <a href="GLOSSARY.html#i&#xB2;c" class="glossary-term" title="I&#xB2;C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Ger&#xE4;ten auf einem Bus.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Ger&#xE4;te mit m&#xF6;glichst wenigen Kan&#xE4;len ansteuern zu k&#xF6;nnen.
+Ger&#xE4;te haben dabei eine bestimmte Adresse, &#xFC;ber die sie auf zwei Kan&#xE4;len SDA (serial data) und SDC (serial clock) angesteuert werden.
+Mehrere Ger&#xE4;te k&#xF6;nnen so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.">I&#xB2;C</a>-Bus auf dem <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a>, gilt der <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> immer als Master-Ger&#xE4;t und alle anderen Ger&#xE4;te am Bus als Slave.
+Jeder Slave hat seine eigene Adresse in Form einer Hexadezimalzahl, mit welcher er eindeutig angesprochen werden kann.
+F&#xFC;r gew&#xF6;hnlich bringt jedes Ger&#xE4;t einen Bereich von Busadressen mit, welche man verwenden kann. Die jeweiligen Adressen k&#xF6;nnen im Datenblatt des Herstellers nachgeschaut werden, und stehen auch bei uns im <a href="GLOSSARY.html">Glossar</a>.</p><h2 id="die-wireh-bibliothek">Die <code>Wire.h</code> Bibliothek</h2><p>Um den <a href="GLOSSARY.html#i&#xB2;c" class="glossary-term" title="I&#xB2;C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Ger&#xE4;ten auf einem Bus.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Ger&#xE4;te mit m&#xF6;glichst wenigen Kan&#xE4;len ansteuern zu k&#xF6;nnen.
+Ger&#xE4;te haben dabei eine bestimmte Adresse, &#xFC;ber die sie auf zwei Kan&#xE4;len SDA (serial data) und SDC (serial clock) angesteuert werden.
+Mehrere Ger&#xE4;te k&#xF6;nnen so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.">I&#xB2;C</a>-Bus verwenden zu k&#xF6;nnen muss die Wire-Bibliothek (welche in der <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> IDE enthalten ist) verwendet werden.
+Die Bibliothek wird durch den Befehl <code>#include &lt;Wire.h&gt;</code> noch vor dem <code>setup()</code> eingebunden und im <code>setup()</code> mit dem Befehl <code>Wire.begin();</code> gestartet.</p><p>Die Daten werden &#xFC;ber den <a href="GLOSSARY.html#i&#xB2;c" class="glossary-term" title="I&#xB2;C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Ger&#xE4;ten auf einem Bus.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Ger&#xE4;te mit m&#xF6;glichst wenigen Kan&#xE4;len ansteuern zu k&#xF6;nnen.
+Ger&#xE4;te haben dabei eine bestimmte Adresse, &#xFC;ber die sie auf zwei Kan&#xE4;len SDA (serial data) und SDC (serial clock) angesteuert werden.
+Mehrere Ger&#xE4;te k&#xF6;nnen so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.">I&#xB2;C</a>-Bus Byte f&#xFC;r Byte &#xFC;bertragen.
+Um ein Byte zu senden sind drei Befehle erforderlich:</p><ol><li><p><code>Wire.beginTransmission(Adresse);</code></p><p>Mit diesem Befehl wird die Kommunikation eingeleitet. Adresse steht hier f&#xFC;r die jeweilige hexadezimale Bus-Adresse des Slave-Ger&#xE4;tes.</p></li>
+<li><p><code>Wire.write(Daten);</code></p><p>Dieser Befehl sendet ein Byte Daten vom <a href="GLOSSARY.html#arduino" class="glossary-term" title="Der Arduino ist ein quelloffenes Mikrocontroller-Board, auf welchem ein Microcomputer sowie mehrere digitale und analoge Eing&#xE4;nge integriert sind.">Arduino</a> an der zuvor angesprochene Ger&#xE4;t.</p></li>
+<li><p><code>Wire.endTransmission();</code></p><p>Mit diesem Befehl wird die &#xDC;bertragung beendet.</p></li></ol>
+<p>Um nun Daten von einem <a href="GLOSSARY.html#i&#xB2;c" class="glossary-term" title="I&#xB2;C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Ger&#xE4;ten auf einem Bus.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Ger&#xE4;te mit m&#xF6;glichst wenigen Kan&#xE4;len ansteuern zu k&#xF6;nnen.
+Ger&#xE4;te haben dabei eine bestimmte Adresse, &#xFC;ber die sie auf zwei Kan&#xE4;len SDA (serial data) und SDC (serial clock) angesteuert werden.
+Mehrere Ger&#xE4;te k&#xF6;nnen so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.">I&#xB2;C</a>-Ger&#xE4;t anzufordern ben&#xF6;tigt man vier Befehle:</p><ol><li><p><code>Wire.beginTransmission(Adresse);</code></p></li>
+<li><p><code>Wire.requestFrom(Adresse, X);</code></p><p>Bei diesem Befehl steht das X f&#xFC;r die Anzahl an Bytes, die angefordert werden.</p></li>
+<li><p><code>incoming = Wire.read();</code></p><p>Mit diesem Befehl speichert man die ankommenden Daten in einer Variable.</p></li>
+<li><p><code>Wire.endTransmission();</code></p><p>Mit diesem Befehl wird die &#xDC;bertragung beendet.</p></li></ol>
+<p><div id="page-footer"><hr><p><span style="color: #666; font-size: 85%;">
+  Made with &#x2665; vom senseBox Team am <a href="https://www.uni-muenster.de/Geoinformatics/" target="_blank">ifgi</a>, WWU M&#xFC;nster
+</span>
+<span style="color: #666; font-size: 85%; float: right; align: center;">
+  Alle Inhalte ver&#xF6;ffentlicht unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+  <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" align="center">
+</span></p></div></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="software_libraries.html" class="navigation navigation-prev " aria-label="Previous page: Verwendung von Software-Bibliotheken">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kommentare.html" class="navigation navigation-next " aria-label="Next page: Kommentare im Quelltext">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Der serielle Datenbus (I²C)","level":"3.7","depth":1,"next":{"title":"Kommentare im Quelltext","level":"3.8","depth":1,"path":"kommentare.md","ref":"kommentare.md","articles":[]},"previous":{"title":"Verwendung von Software-Bibliotheken","level":"3.6","depth":1,"path":"software_libraries.md","ref":"software_libraries.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","localized-footer","scramble-mailto"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"localized-footer":{"filename":"FOOTER.md"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"scramble-mailto":{"scrambleMethod":"jsFunction"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit This Page","de":"Seite bearbeiten"},"base":"https://github.com/sensebox/books/tree/master/edu"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"der_serielle_datenbus.md","mtime":"2016-07-23T11:39:29.635Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-23T11:40:58.866Z"},"basePath":".","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scramble-mailto/scramble-mailto.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

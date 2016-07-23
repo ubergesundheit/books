@@ -1,0 +1,348 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>Software installation · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="assembly03_osem.html" />
+    
+    
+    <link rel="prev" href="assembly01_inventory.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="assembly00.html">
+            
+                <a href="assembly00.html">
+            
+                    
+                    Building Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="assembly01_inventory.html">
+            
+                <a href="assembly01_inventory.html">
+            
+                    
+                    Inventory & assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="assembly02_software.html">
+            
+                <a href="assembly02_software.html">
+            
+                    
+                    Software installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="assembly03_osem.html">
+            
+                <a href="assembly03_osem.html">
+            
+                    
+                    openSenseMap registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="assembly04_example.html">
+            
+                <a href="assembly04_example.html">
+            
+                    
+                    Exemplary setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Software installation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="driver---software-installation">Driver- &amp; software installation</h1><p>The senseBox:home is available with different microcontrollers:
+Older versions come with a <em>Wattuino Uno</em> board (pictured on the left), current versions come with a <em>Genuino Uno</em> board (pictured on the right).</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/controller_boards.jpg" align="center" width="400"></p><blockquote><p>only windows users with a <em>Wattuino Uno</em> have to do a manual installation of the FTDI drivers (see below)</p></blockquote><h2 id="preparation">Preparation</h2><p>Before activating your senseBox, installation of drivers and additional software on your computer is required.
+Also a test run is recommended to verify the proper operation of sensors and internet connection.
+This setup guide is written for Windows 7, but other operating systems like Linux and OSX are supported as well, and are set up similarly.</p><p>If something goes wrong, just <a href="#" onclick="openMail(&apos;support&apos;,&apos;sensebox.de&apos;)">contact our support team</a>!</p><h2 id="arduino-ide-software-download">Arduino IDE software download</h2><blockquote><p>Please use Arduino IDE v1.6.5 or higher!</p></blockquote><p>The senseBox uses a modified version of the Arduino Uno microcontroller.
+To load a program onto the board, you need the integrated development environment (IDE) by Arduino.
+Download the latest version from the <a href="https://www.arduino.cc/en/main/software" target="_blank">Arduino homepage</a> and unpack the downloaded zip-file (see images below).</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/03_arduino-dl.png" align="center" width="400"></p><p>Arduino is an open source project and is funded through donations. Thus you are asked for a contribution, but you may skip this by clicking &quot;just download&quot;.</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/04_donate.png" align="center" width="400"></p><p>Create a new folder on your harddrive and unpack the downloaded zip-File there.</p><h2 id="installation-of-arduino-libraries">Installation of Arduino libraries</h2><p>To be able to control the sensors and ethernet-shield, additional libraries are required. As we are using a custom ethernet shield, the default <code>ethernet</code> libary won&apos;t work.
+You can download all required libraries <a href="https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip" target="_blank">here</a>.
+Download the archive and unpack it in your arduino-folder.</p><p>In case of file conflicts, always overwrite the old files.</p><h2 id="driver-installation">Driver installation</h2><blockquote><p>You can skip the installation of FTDI drivers with the <em>Genuino Uno</em> board, as well as on UNIX based operating systems.</p></blockquote><p>In the last step of the software installation drivers for the microcontroller need to be installed.
+On Windows 7 and newer the installation should be started automatically, given a working internet connection.
+Just plug in the microcontroller via USB and wait until the installation is completed (see notification below).</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/10_tray.png" align="center" width="400"></p><h2 id="sensor-testing">Sensor testing</h2><p>Next we check, if all sensors operate correctly.
+To do that</p><ol><li>start the Arduino IDE
+</li>
+<li>select <code>Arduino Uno</code> in the topbar menu <code>Tools</code> &#x2192; <code>Board</code>
+</li>
+<li>select the correct device in the topbar menu <code>Tools</code> &#x2192; <code>COM-port</code>
+<ul><li>In case multiple options are displayed, the correct port may be found in the windows device manager or by trial &amp; error.
+</li></ul>
+</li></ol>
+<p>Now we load a sensor testing program onto the microcontroller, which we previously downloaded with the senseBox libraries:</p><ol><li><strong>open the sketch:</strong> select in the topbar <code>File</code> &#x2192; <code>Examples</code> &#x2192; <code>senseBox</code> &#x2192; <code>_01_sensor_test</code>
+</li>
+<li><strong>upload the sketch:</strong> select in the topbar <code>Sketch</code> &#x2192; <code>Upload</code>, or click the <em>arrow</em> icon in the toolbar
+</li>
+<li><strong>open the <em>serial monitor</em>:</strong> select in the topbar  <code>Tools</code> &#x2192; <code>Serial Monitor</code> or click the <em>magnifiyng glass</em> in the toolbar
+</li></ol>
+<p>Now the current measurements of the connected sensors should be printed in the serial monitor.
+You may check the correctness of the temperature-, humidity- and light intensity-values by experimenting.
+Air pressure and UV energy can hardly be tested directly, but the values should be around 600 - 1000 hPa and below 50 &#x3BC;W/cm&#xB2; (indoors) respectively.</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/11_serial1.png" align="center" width="400"></p><h2 id="test-the-internet-connection">Test the internet connection</h2><p>Finally we check the internet connection to the openSenseMap (OSeM) server:</p><ol><li>close the serial monitor window
+</li>
+<li><p>connect an ethernet cable from your home network to the sensebox</p><ul><li>you may also connect it to another computer and share it&apos;s WiFi as described <a href="TODO">here</a>
+</li></ul>
+</li>
+<li><p>load the <code>_02_network_test</code> sketch: <code>File</code> &#x2192; <code>Examples</code> &#x2192;  <code>senseBox</code></p></li>
+<li>reopen the serial monitor
+</li></ol>
+<p>If the connection was successful, an according message is displayed in the serial monitor.</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/12_serial2.png" align="center" width="400"></p><blockquote><p>Due to legacy reasons port 8000 and 9000 must be opened on your router for a successful connection to the OSeM server. This should normally be the case without configuration</p></blockquote><p><div id="page-footer"><hr><p><span style="color: #666; font-size: 85%;">
+    Made with &#x2665; by the senseBox team at <a href="https://www.uni-muenster.de/Geoinformatics/en/" target="_blank">ifgi</a>, WWU M&#xFC;nster
+</span>
+<span style="color: #666; font-size: 85%; float: right; align: center;">
+    All content is published under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+    <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" align="center">
+</span></p></div></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="assembly01_inventory.html" class="navigation navigation-prev " aria-label="Previous page: Inventory & assembly">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="assembly03_osem.html" class="navigation navigation-next " aria-label="Next page: openSenseMap registration">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Software installation","level":"1.2.2","depth":2,"next":{"title":"openSenseMap registration","level":"1.2.3","depth":2,"path":"assembly03_osem.md","ref":"assembly03_osem.md","articles":[]},"previous":{"title":"Inventory & assembly","level":"1.2.1","depth":2,"path":"assembly01_inventory.md","ref":"assembly01_inventory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","localized-footer","scramble-mailto"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"localized-footer":{"filename":"FOOTER.md"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"scramble-mailto":{"scrambleMethod":"jsFunction"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit This Page","de":"Seite bearbeiten"},"base":"https://github.com/sensebox/books/tree/master/home"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"assembly02_software.md","mtime":"2016-07-23T11:39:29.651Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-23T11:41:48.372Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scramble-mailto/scramble-mailto.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

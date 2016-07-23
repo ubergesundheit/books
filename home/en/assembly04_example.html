@@ -1,0 +1,338 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>Exemplary setup · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="assembly03_osem.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="assembly00.html">
+            
+                <a href="assembly00.html">
+            
+                    
+                    Building Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="assembly01_inventory.html">
+            
+                <a href="assembly01_inventory.html">
+            
+                    
+                    Inventory & assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="assembly02_software.html">
+            
+                <a href="assembly02_software.html">
+            
+                    
+                    Software installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="assembly03_osem.html">
+            
+                <a href="assembly03_osem.html">
+            
+                    
+                    openSenseMap registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="assembly04_example.html">
+            
+                <a href="assembly04_example.html">
+            
+                    
+                    Exemplary setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Exemplary setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote><p><strong><em>Information:</em></strong>
+A custom casing for the senseBox:home is currently in development, but not yet available.
+The setup shown here thus is just an examplary assembly.
+With a bit of creativity, you can design a decent casing for your specific installation site!</p></blockquote><h1 id="exemplary-setup">Exemplary setup</h1><p>This hardware setup requires that the previous steps are completed, and the station is registered on the openSenseMap.</p><p>To set up the senseBox outdoors, a long ethernet cable, a Power-on-LAN (POE) adapter, and a weatherproof case is required.
+Additionally the following tools are needed:</p><ul><li>hot glue
+</li>
+<li>drill
+</li>
+<li>screw-driver
+</li>
+<li>cable ties
+</li></ul>
+<h2 id="casing">Casing</h2><p>For requirements on the casing see the <a href="assembly01_inventory.html#additional-accessories-not-included-with-your-senseboxhome">first section of this guide</a>.
+We use <a href="https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf" target="_blank">this</a> case, which is available for order on <a href="http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124" target="_blank">the manufacturer&apos;s webshop</a>.</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/Fibox.jpg" align="center" width="400"></p><h4 id="cable-routing">Cable routing</h4><p>The combined power- and ethernet cable, as well as the long connection cable to the <code>HDC1008</code> temperature sensor is run through a 15mm wide hole, which we drill through the side of the case:</p><p>|
+|
+| <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/bohrung_1.jpg" align="center" width="400"> | <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/bohrung_2.jpg" align="center" width="400"> |</p><h4 id="mounting-the-circuit-board">Mounting the circuit board</h4><p>To fix the main board into the casing, simply a few points of hotglue are required.
+With a bit of pressure it should sit soon well within the case:</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/angeklebt.jpg" align="center" width="400"></p><h4 id="mounting-the-sensors">Mounting the sensors</h4><p>When attaching the sensors, make sure <strong>no residues of adhesive</strong> get onto the front side of the circuit board!</p><p>Both light-sensors (<code>VEML6070</code> and <code>TSL45315</code>) are placed on top of the senseBox shield, as they require an unobstructed view to the transparent case-top.
+Make sure they are not covered by cables later on!</p><p>|
+|
+| <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensor_ankleben_1.jpg" align="center" width="400"> | <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensor_ankleben_2.jpg" align="center" width="400"> |</p><p>The air-pressure sensor (<code>BMP280</code>) is placed on the side of the case:</p><p>|
+|
+| <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/luftdruck_ankleben_1.jpg" align="center" width="400"> | <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/luftdruck_ankleben_2.jpg" align="center" width="400"> |</p><h4 id="mounting-the-temperature-sensor">Mounting the temperature sensor</h4><p>Air-pressure and -temperature are affected by the wasteheat of the microcontroller.
+Thus a separate housing (see below) for the <code>HDC1008</code> is required, that has a better airflow, but still protects the sensor from rainwater.
+We use the long connection cable for this sensor and route it through the drilled hole:</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_aussen.jpg" align="center" width="400"></p><h4 id="power-and-network-connection">Power and network connection</h4><p>To provide the station with power, we use a POE-adapter as it uses up less space in the drilling hole.
+The usual power connection may be used instead of course.</p><p>The adapter is connected to the respective connections on the main boards.
+Afterwards we route an ethernet cable into the case and connect it to the adapter:</p><p>|
+|
+| <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/POE_1.jpg" align="center" width="400"> | <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/POE_2.jpg" align="center" width="400"> |</p><p>Now we are done with the casing and it may be closed!</p><h4 id="casing-for-the-hdc1008">Casing for the <code>HDC1008</code></h4><p>To make the placement of the temperature sensor weatherproof, we 3D-printed a small separate casing:</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_gehaeuse.jpg" align="center" width="400"></p><p>After sliding the sensor board in and closing the lid, we attach the case onto the main FIBOX case with hotglue.</p><h4 id="seal-the-case">Seal the case</h4><p>At last we need to make sure that no water gets into the case.
+Once again we use our hot glue, and seal the drilled hole:</p><p><img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/abdichten.jpg" align="center" width="400"></p><h4 id="final-result">Final result</h4><p>For the installation we attach the second piece of the POE-adapter to the ethernet cable, and connect the senseBox to the network and power supply.</p><p>done!</p><p>|
+|
+| <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"> | <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpg" align="center" width="400"> |</p><blockquote><p><strong><em>hint:</em></strong> Look for a location for the station, which ideally is directly exposed to the sky and is unobstructed in its surroundings</p><p><strong><em>warning!</em></strong> you need to place the power plug outdoors, absolutely use a weatherproof junction box!</p></blockquote><p><div id="page-footer"><hr><p><span style="color: #666; font-size: 85%;">
+    Made with &#x2665; by the senseBox team at <a href="https://www.uni-muenster.de/Geoinformatics/en/" target="_blank">ifgi</a>, WWU M&#xFC;nster
+</span>
+<span style="color: #666; font-size: 85%; float: right; align: center;">
+    All content is published under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+    <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" align="center">
+</span></p></div></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="assembly03_osem.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: openSenseMap registration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Exemplary setup","level":"1.2.4","depth":2,"previous":{"title":"openSenseMap registration","level":"1.2.3","depth":2,"path":"assembly03_osem.md","ref":"assembly03_osem.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","localized-footer","scramble-mailto"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"localized-footer":{"filename":"FOOTER.md"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"scramble-mailto":{"scrambleMethod":"jsFunction"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit This Page","de":"Seite bearbeiten"},"base":"https://github.com/sensebox/books/tree/master/home"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"assembly04_example.md","mtime":"2016-07-23T11:39:29.651Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-23T11:41:48.372Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scramble-mailto/scramble-mailto.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

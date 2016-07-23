@@ -1,0 +1,316 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <title>Bearbeiten einer Station · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="osem_download.html" />
+    
+    
+    <link rel="prev" href="osem_registrierung.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Einleitung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="osem_registrierung.html">
+            
+                <a href="osem_registrierung.html">
+            
+                    
+                    Registrierung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="osem_bearbeiten.html">
+            
+                <a href="osem_bearbeiten.html">
+            
+                    
+                    Bearbeiten einer Station
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="osem_download.html">
+            
+                <a href="osem_download.html">
+            
+                    
+                    Datendownload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="osem_datenanalyse.html">
+            
+                <a href="osem_datenanalyse.html">
+            
+                    
+                    Datenanalyse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="osem_api.html">
+            
+                <a href="osem_api.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Veröffentlicht mit GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Bearbeiten einer Station</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bearbeiten-einer-station">Bearbeiten einer Station</h1><p>Von bereits registrierten Stationen lassen sich s&#xE4;mtliche Angaben nachtr&#xE4;glich &#xE4;ndern.</p><p>Hierzu wird der bei der Registrierung erhaltene <strong>API-Key</strong> ben&#xF6;tigt!</p><ol><li><p>W&#xE4;hle deine Station auf der openSenseMap durch Klick auf den entsprechenden Marker auf der Karte aus.</p><p>Alternativ kannst du auch in der folgenden URL <code>&lt;senseBox-ID&gt;</code> durch deine senseBox-ID (nicht der API-Key!) ersetzen:
+<code>https://opensensemap.org/explore/&lt;senseBox-ID&gt;</code></p></li>
+<li><p>W&#xE4;hle in der rechten Sidebar den Tab &quot;Information&quot;, und klicke unten den Button &quot;Verwalten&quot;.</p></li>
+<li><p>Gebe deinen API-Key im erscheinenden Dialog ein.
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/osem_edit_api-key.jpg" center="" width="600px"></p></li>
+<li><p>Gebe deine &#xC4;nderungen im sich &#xF6;ffnenden Formular ein.
+Neben &#xC4;nderungen an Metadaten, Standort und Foto ist es auch m&#xF6;glich die Sensor-Konfiguration zu &#xE4;ndern.</p><blockquote><p><strong><em>Hinweis:</em></strong> <em>Falls du einen neuen Sensor hinzugef&#xFC;gt hast und den aktualisierten Arduino-Sketch herunterladen willst, ist dies erst m&#xF6;glich, wenn die Seite nach dem Speichern neu geladen, und der API-Key erneut eingegeben wurde.</em></p></blockquote></li>
+<li><p>Klicke im oberen Teil des Dialogs auf &quot;Speichern&quot; um deine &#xC4;nderungen zu speichern, oder &quot;Abbrechen&quot; um sie zu verwerfen.</p></li></ol>
+<h2 id="l&#xF6;schen-einer-station">L&#xF6;schen einer Station</h2><p>Folge den Schritten unter <a href="#bearbeiten-einer-station">&quot;Bearbeiten einer Station&quot;</a> und gebe unter &quot;Sensebox l&#xF6;schen&quot; <code>DELETE</code> in das Textfeld ein.</p><blockquote><p><strong><em>Achtung:</em></strong> <em>Hierdurch werden neben deiner senseBox alle hinterlegten Sensordaten unwiderruflich entfernt!</em></p></blockquote><p><div id="page-footer"><hr><p><span style="color: #666; font-size: 85%;">
+  Made with &#x2665; vom senseBox Team am <a href="https://www.uni-muenster.de/Geoinformatics/" target="_blank">ifgi</a>, WWU M&#xFC;nster
+</span>
+<span style="color: #666; font-size: 85%; float: right; align: center;">
+  Alle Inhalte ver&#xF6;ffentlicht unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+  <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" align="center">
+</span></p></div></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="osem_registrierung.html" class="navigation navigation-prev " aria-label="Previous page: Registrierung">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="osem_download.html" class="navigation navigation-next " aria-label="Next page: Datendownload">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bearbeiten einer Station","level":"1.3","depth":1,"next":{"title":"Datendownload","level":"1.4","depth":1,"path":"osem_download.md","ref":"osem_download.md","articles":[]},"previous":{"title":"Registrierung","level":"1.2","depth":1,"path":"osem_registrierung.md","ref":"osem_registrierung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","localized-footer","scramble-mailto"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"localized-footer":{"filename":"FOOTER.md"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"scramble-mailto":{"scrambleMethod":"jsFunction"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit This Page","de":"Seite bearbeiten"},"base":"https://github.com/sensebox/books/tree/master/osem"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"osem_bearbeiten.md","mtime":"2016-07-23T11:39:29.651Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-23T11:42:34.766Z"},"basePath":".","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scramble-mailto/scramble-mailto.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

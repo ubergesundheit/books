@@ -1,0 +1,568 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>ArduinoWeatherStation (Hasselt University) · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../downloads.html" />
+    
+    
+    <link rel="prev" href="../community_projects.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../contributing.html">
+            
+                <a href="../contributing.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting started</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Basics</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Projects</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../community_projects.html">
+            
+                <a href="../community_projects.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Community Projects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1.1" data-path="Tutorial_ArduinoWeatherStation.html">
+            
+                <a href="Tutorial_ArduinoWeatherStation.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    ArduinoWeatherStation (Hasselt University)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Appendix</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../downloads.html">
+            
+                <a href="../downloads.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Downloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ArduinoWeatherStation (Hasselt University)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><em>DIGITAL CITIZENS, CONNECTED COMMUNITIES:</em></p><p><em>THE ROLE OF SPATIAL COMPUTING AND VOLUNTEERED GEOGRAPHIC INFORMATION</em></p><p><strong>TUTORIAL: &#x201C;MOBILE SENSOR LOGGER&#x201D;</strong></p><p>Authors: Michelle Gybel and Johannes Sch&#xF6;ning of Hasselt University</p><p>Edited by Felix Erdmann using <em>pandoc</em></p><p>This tutorial is a step-by-step guide which will teach you how to build
+mobile sensor logging device using the Sensebox Edu kit.</p><h1 id="preparation">Preparation</h1><ol><li><p>Install Arduino</p><ul><li><p><a href="https://www.arduino.cc/en/Main/Software" target="_blank">https://www.arduino.cc/en/Main/Software</a></p></li>
+<li><p>(Extra:) <strong>Tutorials</strong> and <strong>Reference Guides</strong> can be found here:
+<a href="https://www.arduino.cc/en/Guide/HomePage" target="_blank">https://www.arduino.cc/en/Guide/HomePage</a></p></li></ul>
+</li></ol>
+<ol><li><p>Install SenseBox Plugins</p><ul><li><p>Download from link:</p></li>
+<li><p><a href="https://github.com/senseBox/OER/blob/master/Libraries/senseBox_Libraries.zip?raw=true" target="_blank">https://github.com/senseBox/OER/blob/master/Libraries/senseBox_Libraries.zip?raw=true</a></p></li>
+<li><p>Extract the folder and copy the content to the <strong>libraries</strong> folder in Arduino&#x2019;s installation files.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image1.jpg"></p><h1 id="start-with-the-basics-how-to-push-a-button">Start with the basics&#x2026; How to Push a button!</h1><ol><li><p>What do you need?</p><ul><li><p>Genuino Board with breadboard <strong>(A)</strong></p></li>
+<li><p>10K ohm resistor <strong>(B)</strong></p></li>
+<li><p>Wires <strong>(C)</strong></p></li>
+<li><p>Pushbutton (switch) <strong>(D)</strong></p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image5.jpg"></p><ol><li><p>Provide voltage and grounding to the breadboard</p><ul><li><p>Connect a red wire to the positive vertical row of the breadboard and to the 5 volt supply on the Genuino Board <strong>(A)</strong>.</p></li>
+<li><p>Connect a black wire to the negative vertical row of the breadboard and to the ground (GND) on the Genuino Board <strong>(B)</strong>.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image7.jpg">
+  <img alt="" src="Tutorial_ArduinoWeatherStation/image9.jpg"></p><ol><li><p>Add the pushbutton and provide it with power and grounding</p><ul><li><p>Attach the <strong>pushbutton</strong> to the <em>breadboard</em> as presented below <strong>(A)</strong>.</p></li>
+<li><p>Create a connection between one of the legs of the pushbutton and the ground with the <strong>10K ohm resistor</strong> <strong>(B)</strong>.</p></li>
+<li><p>Connect a red wire to the <strong>positive</strong> vertical row of the <em>breadboard</em> <strong>(C)</strong>.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image11.jpg"></p><!-- -->
+
+
+<ul><li><p>Provide with a green wire a connection between digital pin 2 on the Genuino Board and the leg of pushbutton connected to the ground.</p><p><img alt="" src="Tutorial_ArduinoWeatherStation/image13.jpg"></p></li></ul>
+<ol><li><p>Turn on the light, &#xE4;hm button&#x2026; by writing some code</p><ul><li><p>Start the Arduino IDE.</p></li>
+<li><p>Programs written in the IDE are called sketches. Go to File New and name the file Pushbutton.ino or similar to create your first sketch.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image15.jpg"></p><ul><li><p>Each sketch must contain a setup() and a loop() function:</p><p><img alt="" src="Tutorial_ArduinoWeatherStation/image16.jpg"></p></li></ul>
+<!-- -->
+
+
+<ul><li><p>As a start you can may place the following code in your sketch. It initializes the which pins are connected to the LED light on the Genuino Board and the push button. Next, it provides the functionality to turn the LED light on when the button is pressed in. This LED is built-in in the Genuino board and driven by pin 13.</p><p><img alt="" src="Tutorial_ArduinoWeatherStation/image17.jpg"></p></li></ul>
+<pre><code class="lang-arduino">
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> buttonPin = <span class="hljs-number">2</span>; <span class="hljs-comment">// the number of the pin to which the pushbutton is connected</span>
+
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">13</span>; <span class="hljs-comment">// the number of the pin connected to the LED</span>
+
+  <span class="hljs-keyword">int</span> buttonState = <span class="hljs-number">0</span>; <span class="hljs-comment">// variable for reading the status of the pushbutton</span>
+
+  <span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+
+    <span class="hljs-built_in">pinMode</span>(buttonPin, <span class="hljs-literal">INPUT</span>); <span class="hljs-comment">// initialize the pushbutton pin as an input</span>
+
+    <span class="hljs-built_in">pinMode</span>(ledPin, <span class="hljs-literal">OUTPUT</span>); <span class="hljs-comment">// initialize the LED pin as an output</span>
+
+  }
+
+  <span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+
+    buttonState = <span class="hljs-built_in">digitalRead</span>(buttonPin); <span class="hljs-comment">// get the value of the pushbutton</span>
+
+    <span class="hljs-comment">//check if the pushbutton is pressed in</span>
+
+    <span class="hljs-built_in">if</span> (buttonState == <span class="hljs-literal">HIGH</span>){
+
+    <span class="hljs-built_in">digitalWrite</span>(ledPin, <span class="hljs-literal">HIGH</span>); <span class="hljs-comment">// if the button is pushed, turn LED on</span>
+
+    } <span class="hljs-built_in">else</span> {
+
+    <span class="hljs-built_in">digitalWrite</span>(ledPin, <span class="hljs-literal">LOW</span>); <span class="hljs-comment">// if the button is released, turn LED off</span>
+
+    }
+
+  }</code></pre>
+<ol><li><p>Compile and upload the sketch to the board</p><ul><li>Connect the board to your computer with a USB cable.
+</li></ul>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image19.jpg">
+<img alt="" src="Tutorial_ArduinoWeatherStation/image21.jpg"></p><ul><li><p>Compile the code by clicking on the Verify button <strong>(A)</strong>.</p></li>
+<li><p>Click on the Upload button <strong>(B)</strong>.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image22.jpg"></p><ol><li><p>Test your program</p><ul><li>Push the button on the board.
+</li>
+<li>A LED light on the Genuino Board should light up.
+</li></ul>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image23.jpg"></p></li></ol>
+<h1 id="lets-build-the-sensor-data-logger">Let&#x2019;s build the Sensor Data logger</h1><ol><li><p>What do you need?</p><ul><li><p>Your &#x201C;Push-a-button&#x201D; construction (A)</p></li>
+<li><p>HDC1008 Temperature and Humidity Sensor (B)</p></li>
+<li><p>Extra wires (C)</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image24.jpg"></p><ol><li><p>Connect the sensor and provide it with power and grounding</p><ul><li>Connect the <strong>sensor</strong> to the <em>breadboard</em>.
+</li></ul>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image25.jpg"></p><ul><li><p>The labels on the sensor mark tell which pins need to be connected
+to the power and ground. If you are unsure, please consult the data
+sheet for your sensor.</p></li>
+<li><p>Connect a yellow wire to the positive vertical row and to the VCC
+pin of the sensor (A).</p></li>
+<li><p>Connect a black wire to the negative vertical row and to the GND pin
+of the sensor (B).</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image32.jpg"></p><ol><li><p>Create a connection between the sensor and the microcontroller to
+transmit measurements</p><ul><li><p>Provide with a blue wire a connection between the <strong>analog pin AV4</strong>
+(you may also connect to another free analog pin; then check if you
+address the sensor in your code correctly) on the <em>Genuino Board</em>
+and the <strong>SDA</strong> <strong>pin</strong> of the sensor.</p></li>
+<li><p>Provide with a green wire a connection between the <strong>analog pin
+AV5</strong> (you may also connect to another free analog pin; then check
+if you address the sensor in your code correctly) on the <em>Genuino
+Board</em> and the <strong>SCL</strong> <strong>pin</strong> of the sensor.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image34.jpg">
+  <img alt="" src="Tutorial_ArduinoWeatherStation/image35.jpg"></p><h1 id="write-the-program-for-the-weather-station">Write the program for the Weather Station</h1><ol><li><p>Create a new sketch</p><ul><li><p>Start the Arduino IDE.</p></li>
+<li><p>Go to File New and name the file PushbuttonTemperature.ino to create
+your own sketch.</p></li></ul>
+</li></ol>
+<ol><li><p>Include the required libraries</p><ul><li><p>Add the following code to your program to add two libraries:</p><ul><li><p>Wire.h provides functions to communicate with the data
+line (SDA) pin and clock line (SCL) pin.</p></li>
+<li><p>HDC100X.h makes communication and actions with the SD
+card possible.</p><p><code>#include &lt;Wire.h&gt;;</code></p><p><code>#include &lt;HDC100X.h&gt;;</code></p></li></ul>
+</li></ul>
+</li></ol>
+<ol><li><p>Define global variables</p><ul><li><p>Create a connection with the sensor and pushbutton.</p></li>
+<li><p>Define variables for the button state and id.</p></li></ul>
+</li></ol>
+<pre><code class="lang-arduino">    HDC100X HDC1(<span class="hljs-number">0x43</span>); <span class="hljs-comment">// create a connection to the sensor on address 0x43</span>
+
+    <span class="hljs-keyword">int</span> buttonPin = <span class="hljs-number">2</span>; <span class="hljs-comment">// the number of the pin to which the pushbutton</span>
+    <span class="hljs-comment">// is connected, change this if you</span>
+    <span class="hljs-comment">// connected the button to a different port</span>
+
+    <span class="hljs-keyword">int</span> buttonState = <span class="hljs-number">0</span>; <span class="hljs-comment">// variable for reading the status of the pushbutton</span>
+
+    <span class="hljs-keyword">int</span> lastButtonState = <span class="hljs-number">0</span>; <span class="hljs-comment">// previous state of the pushbutton</span>
+
+    <span class="hljs-keyword">int</span> id = <span class="hljs-number">0</span>; <span class="hljs-comment">// count for how many times the button has been pressed</span>
+    <span class="hljs-comment">// and set this as ID</span></code></pre>
+<ol><li><p>Write the setup() function</p><ul><li><p>Start the sensor.</p></li>
+<li><p>Initialize the pushbutton as an input.</p><pre><code class="lang-arduino"><span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>); <span class="hljs-comment">// provide communication with the</span>
+<span class="hljs-comment">// computer with data rate 9600 bits per second</span>
+
+HDC1.<span class="hljs-built_in">begin</span>(HDC100X\_TEMP\_HUMI, HDC100X\_14BIT, HDC100X\_14BIT,
+DISABLE); <span class="hljs-comment">// start the sensor</span>
+
+<span class="hljs-built_in">pinMode</span>(buttonPin,<span class="hljs-literal">INPUT</span>); <span class="hljs-comment">// initialize the pushbutton pin</span>
+<span class="hljs-comment">// as an input</span>
+
+}</code></pre>
+</li></ul>
+</li></ol>
+<ol><li><p>Write the loop() function</p><ul><li><p>Read the value from the push button.</p></li>
+<li><p>If the button is pressed, measure the temperature and print it to the console.</p></li></ul>
+</li></ol>
+<pre><code class="lang-arduino">  <span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+
+    buttonState = <span class="hljs-built_in">digitalRead</span>(buttonPin); <span class="hljs-comment">// read value from push button</span>
+
+    <span class="hljs-comment">// if button is pressed in</span>
+
+    <span class="hljs-built_in">if</span> (buttonState != lastButtonState &amp;&amp; buttonState == <span class="hljs-literal">HIGH</span>) {
+
+    id++; <span class="hljs-comment">// update id</span>
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;ID: &quot;</span>); <span class="hljs-comment">// print the id to the console</span>
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(id);
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Temperature: &quot;</span>); <span class="hljs-comment">// get the temperature and</span>
+    <span class="hljs-comment">// print it to the console</span>
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(HDC1.getTemp());
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\\n&quot;</span>);
+
+    }
+
+    lastButtonState = buttonState; <span class="hljs-comment">// set current state as last button state</span>
+
+  }</code></pre>
+<ol><li><p>Run your program</p></li>
+<li><p>Compile your program and upload it to the board (A).</p></li>
+<li><p>Click on the Serial Monitor button. The COM1 dialog should pop up (B).</p></li>
+<li><p>Push the button on your board. A new result should appear on your screen (C).</p></li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image41.jpg"></p><h1 id="write-the-results-to-a-file-on-a-sd-card">Write the results to a file on a SD card</h1><ol><li><p>What do you need?</p><ul><li><p>Your Arduino construction from the previous steps.</p></li>
+<li><p>A SenseBox Shield with SD card slot.</p></li></ul>
+</li></ol>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image42.jpg"></p><ol><li><p>Connect the SenseBox Shield to the Genuino Board</p><ul><li>Since the SenseBox Shield will be placed on top of the Genuino
+Board, the wires need to be connected to the Sensebox Shield.
+</li></ul>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image43.jpg"></p><p><img alt="" src="Tutorial_ArduinoWeatherStation/image44.jpg"></p></li>
+<li><p>Place the <strong>SenseBox Shield</strong> on the <strong>Genuino Board</strong>.</p><p><img alt="" src="Tutorial_ArduinoWeatherStation/image45.jpg"></p></li>
+<li><p>Adjust your program</p><ul><li><p>Open the file PushbuttonTemperature.ino in the Arduino IDE.</p></li>
+<li><p>Add a library for SD card functionalities:</p></li></ul>
+</li></ol>
+<p><code>#include &lt;SD.h&gt;</code></p><!-- -->
+
+
+<ul><li><p>Define a global variable which contains the identifier of the pin connected to the SD card.</p><p><code>int chipPin = 4; // pin connected to the SD card</code></p><ul><li>Initialize the SD card in the <strong>setup()</strong> function.
+</li></ul>
+<p><code>SD.begin(chipPin); // initialize the SD card.</code></p><ul><li>Adjust the loop() function.
+</li></ul>
+<pre><code class="lang-arduino"><span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+
+  buttonState = <span class="hljs-built_in">digitalRead</span>(buttonPin); <span class="hljs-comment">// read value from push button</span>
+
+  <span class="hljs-comment">// if button is pressed in</span>
+
+  <span class="hljs-built_in">if</span> (buttonState != lastButtonState &amp;&amp; buttonState == <span class="hljs-literal">HIGH</span>) {
+
+    id++; <span class="hljs-comment">// update id</span>
+
+    <span class="hljs-built_in">File</span> file = <span class="hljs-built_in">SD</span>.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;temp.csv&quot;</span>, FILE\_WRITE); <span class="hljs-comment">// open a file named temp.csv</span>
+
+    file.<span class="hljs-built_in">print</span>(id); <span class="hljs-comment">// print the id to the file</span>
+
+    file.<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;;&quot;</span>);
+
+    file.<span class="hljs-built_in">print</span>(HDC1.getTemp()); <span class="hljs-comment">// get the temperature and print it to the file</span>
+
+    file.<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\\n&quot;</span>);
+
+    file.<span class="hljs-built_in">close</span>(); <span class="hljs-comment">// close the file</span>
+
+  }
+
+  lastButtonState = buttonState; <span class="hljs-comment">// set current state as last button state</span>
+
+}</code></pre>
+<ul><li><p>Run your program</p></li>
+<li><p>Place the SD card in the slot on the SenseBox Board (A).</p></li>
+<li><p>Compile your program and upload it to the board (B).</p></li>
+<li><p>Push the button on the breadboard multiple times (C).</p></li></ul>
+</li></ul>
+<p><img alt="" src="Tutorial_ArduinoWeatherStation/image46.jpg"></p><ul><li><p>View the results</p><ul><li><p>Place the SD card in the card reader slot of your computer.</p></li>
+<li><p>Open the file TEMP.CSV.</p></li>
+<li><p>You can now see the resulting temperature measurements.</p></li></ul>
+</li></ul>
+<h1 id="make-it-mobile">Make it mobile</h1><p><img alt="" src="Tutorial_ArduinoWeatherStation/image47.jpg"></p><p>Time to go on a field study and measure the temperatures throughout the building and surroundings. You can make your Arduino weather station more mobile by attaching a battery to the <em>Genuino Board</em>. Good luck during your expedition!</p><p><div id="page-footer"><hr><p><span style="color: #666; font-size: 85%;">
+    Made with &#x2665; by the senseBox team at <a href="https://www.uni-muenster.de/Geoinformatics/en/" target="_blank">ifgi</a>, WWU M&#xFC;nster
+</span>
+<span style="color: #666; font-size: 85%; float: right; align: center;">
+    All content is published under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+    <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" align="center">
+</span></p></div></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../community_projects.html" class="navigation navigation-prev " aria-label="Previous page: Community Projects">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../downloads.html" class="navigation navigation-next " aria-label="Next page: Downloads">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ArduinoWeatherStation (Hasselt University)","level":"4.1.1","depth":2,"next":{"title":"Downloads","level":"5.1","depth":1,"path":"downloads.md","ref":"downloads.md","articles":[]},"previous":{"title":"Community Projects","level":"4.1","depth":1,"path":"community_projects.md","ref":"community_projects.md","articles":[{"title":"ArduinoWeatherStation (Hasselt University)","level":"4.1.1","depth":2,"path":"community_projects/Tutorial_ArduinoWeatherStation.md","ref":"community_projects/Tutorial_ArduinoWeatherStation.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["edit-link","localized-footer","scramble-mailto"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"localized-footer":{"filename":"FOOTER.md"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"scramble-mailto":{"scrambleMethod":"jsFunction"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit This Page","de":"Seite bearbeiten"},"base":"https://github.com/sensebox/books/tree/master/edu"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"community_projects/Tutorial_ArduinoWeatherStation.md","mtime":"2016-07-23T11:39:29.635Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-23T11:40:58.866Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-scramble-mailto/scramble-mailto.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
